@@ -24,14 +24,13 @@ class _SignInState extends State<SignIn> {
 
   @override
   Widget build(BuildContext context) {
-    return loading
-        ? Loading()
-        : Scaffold(
-            backgroundColor: Colors.blue[300],
-            appBar: AppBar(
-              backgroundColor: Colors.blue[400],
+    return  Scaffold(
+      backgroundColor: Colors.green[100],
+
+      appBar: AppBar(
+              backgroundColor: Colors.teal,
               elevation: 0.0,
-              title: Text('Sign in to Brew Crew'),
+              title: Text('Sign in to MR Volt'),
               actions: <Widget>[
                 FlatButton.icon(
                   icon: Icon(Icons.person),
@@ -69,7 +68,7 @@ class _SignInState extends State<SignIn> {
                     ),
                     SizedBox(height: 20.0),
                     RaisedButton(
-                        color: Colors.blue[400],
+                        color: Colors.teal,
                         child: Text(
                           'Sign In',
                           style: TextStyle(color: Colors.white),

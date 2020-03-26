@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Best Daily Offers.dart';
+
 class device extends StatefulWidget {
   @override
   _deviceState createState() => _deviceState();
@@ -12,258 +14,331 @@ class _deviceState extends State<device> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
+        backgroundColor: Colors.teal,
         title: Text(
           'Devices',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            fontFamily: 'Oswald',
+            letterSpacing: 3,
+            fontSize: 25,
+          ),
         ),
-        centerTitle: false,
-        backgroundColor: Colors.blue,
-        elevation: 0.0,
-        leading: new IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.of(context).pop();
-            }),
       ),
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.all(22.0),
+            padding: EdgeInsets.all(7.0),
             child: Column(
               //grandfather column
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Row(children: <Widget>[
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/fridge3.png')),
-                        ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Fridge',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(children: <Widget>[
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Fridge',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(40.0, 0.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/cooker.png')),
-                        ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'coocker',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/fridge.jpg'),
+                                ),
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ]),
-                Row(children: <Widget>[
-                  //second row
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/washing.png')),
+                          ],
                         ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Washing Machine',
-                            style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        )
-                      ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(40.0, 10.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/heater.png')),
-                        ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Water heater',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Cookers',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ]),
-                Row(children: <Widget>[
-                  //second row
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/laptob.png')),
-                        ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Laptob',
-                            style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(40.0, 10.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/mobile.png')),
-                        ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Mobile',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/coockers.jpg'),
+                                ),
+                              ),
                             ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ]),
-                Row(children: <Widget>[
-                  //second row
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/conditioner.png')),
+                          ],
                         ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Conditioner',
-                            style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        )
-                      ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 150,
-                    height: 210,
-                    padding: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 15.0),
-                    margin: EdgeInsets.fromLTRB(40.0, 10.0, 0.0, 0.0),
-                    child: Column(
-                      //father column
-                      children: <Widget>[
-                        Container(
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(22.0),
-                              child: Image.asset('assets/ventilator.png')),
-                        ),
-                        Container(
-                          margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-                          child: Text(
-                            'Ventilator',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
+                  ]),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(7.0),
+                  child: Row(children: <Widget>[
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Conditioner',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
-                          ),
-                        )
-                      ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/Conditioner.jpg'),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
-                ])
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Wash Machine',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/washMachine.jpg'),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ]),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(7.0),
+                  child: Row(children: <Widget>[
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Heater',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                    image: AssetImage('images/heater.jpg')),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Ventilator',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/ventilator.jpg'),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ]),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(7.0),
+                  child: Row(children: <Widget>[
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Laptob',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/laptob.jpg'),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      color: Colors.grey[200],
+                      width: 190,
+                      height: 240,
+                      child: Card(
+                        child: Column(
+                          //father column
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Mobile',
+                                style: TextStyle(
+                                  fontFamily: 'BreeSerif',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: GestureDetector(
+                                onTap: () => Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => BDailyOff(),
+                                    )),
+                                child: Image(
+                                  image: AssetImage('images/mobile.jpg'),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ]),
+                ),
               ],
             ),
           ),

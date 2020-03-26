@@ -24,14 +24,11 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
-    return loading
-        ? Loading()
-        : Scaffold(
-            backgroundColor: Colors.blue[300],
+    return  Scaffold(
+            backgroundColor: Colors.green[100],
             appBar: AppBar(
-              backgroundColor: Colors.blue[400],
-              elevation: 0.0,
-              title: Text('Sign up to Brew Crew'),
+              backgroundColor: Colors.teal,
+              title: Text('Sign up to MR Volt'),
               actions: <Widget>[
                 FlatButton.icon(
                   icon: Icon(Icons.person),
@@ -69,7 +66,7 @@ class _RegisterState extends State<Register> {
                     ),
                     SizedBox(height: 20.0),
                     RaisedButton(
-                        color: Colors.blue[400],
+                        color: Colors.teal,
                         child: Text(
                           'Register',
                           style: TextStyle(color: Colors.white),

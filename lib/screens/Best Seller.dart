@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_up/screens/ProuductInfo.dart';
 import 'package:sign_up/screens/devices.dart';
 
 class BestSeller extends StatefulWidget {
@@ -11,6 +12,8 @@ class _BDailyOffState extends State<BestSeller> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal,
+
           title: Text(
             'Best Seller',
             style: TextStyle(
@@ -33,7 +36,7 @@ class _BDailyOffState extends State<BestSeller> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => device(),
+                            builder: (context) => productsInfo(),
                           )),
                       child: Image(
                         image: AssetImage('images/ta.jpg'),
@@ -47,7 +50,7 @@ class _BDailyOffState extends State<BestSeller> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => device(),
+                            builder: (context) => productsInfo(),
                           )),
                       child: Image(
                         image: AssetImage('images/la.jpg'),

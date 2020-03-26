@@ -37,7 +37,7 @@ class _MrHomeState extends State<MrHome> {
               icon: Icon(Icons.account_circle), title: Text('Account')),
         ],
         fixedColor: Colors.deepOrange,
-        unselectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.teal,
         elevation: 20,
         onTap: (index) {
           setState(() {

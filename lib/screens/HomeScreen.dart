@@ -15,8 +15,9 @@ class _MyAppState extends State<HomeScreen> {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.teal,
             title: Text(
-              'Mr Elictric',
+              'Mr Volt',
               style: TextStyle(
                 fontFamily: 'Oswald',
                 letterSpacing: 3,
