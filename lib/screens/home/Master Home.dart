@@ -4,6 +4,8 @@ import 'package:sign_up/screens/home/Best%20Seller.dart';
 import 'package:sign_up/screens/home/HomeScreen.dart';
 import 'package:sign_up/screens/home/wrapper.dart';
 
+import 'devices.dart';
+
 class MrHome extends StatefulWidget {
   @override
   _MrHomeState createState() => _MrHomeState();
@@ -13,8 +15,8 @@ class _MrHomeState extends State<MrHome> {
   int _currentIndex = 0;
   final tabs = [
     Center(child: HomeScreen()),
-    Center(child: BDailyOff()),
-    Center(child: BestSeller()),
+    Center(child: device()),
+    Center(child: device()),
     Center(child: Wrapper()),
   ];
 
