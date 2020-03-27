@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sign_up/screens/ProuductInfo.dart';
-import 'package:sign_up/screens/devices.dart';
+import 'package:sign_up/screens/home/ProuductInfo.dart';
+import 'package:sign_up/screens/home/devices.dart';
 
 class BestSeller extends StatefulWidget {
   @override

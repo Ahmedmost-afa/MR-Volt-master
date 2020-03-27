@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:sign_up/models/user.dart';
 import 'package:sign_up/services/auth.dart';
 
-import 'screens/Master Home.dart';
+import 'screens/home/Master Home.dart';
 
 void main() => runApp(MyApp());
 

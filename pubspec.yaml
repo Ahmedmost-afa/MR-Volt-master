@@ -21,7 +21,6 @@ dependencies:
     sdk: flutter
   carousel_pro: ^1.0.0
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
@@ -49,6 +48,16 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - images/a.jpg
+    - images/b.jpg
+    - images/c.jpg
+    - images/d.jpg
+    - images/e.jpg
+    - images/f.jpg
+    - images/g.jpg
+    - images/h.jpg
+    - images/i.jpg
+    - images/j.jpg
     - assets/volt.jpeg
     - images/bo.png
     - images/ca.jpg
@@ -72,6 +81,56 @@ flutter:
     - images/ventilator.jpg
     - images/washMachine.jpg
     - images/heater.jpg
+    - fridges/f1.jpg
+    - fridges/f2.jpg
+    - fridges/f3.jpg
+    - fridges/f4.jpg
+    - fridges/f5.jpg
+    - fridges/f6.jpg
+    - fridges/f7.jpg
+    - fridges/f8.jpg
+    - fridges/f9.jpg
+    - fridges/f10.jpg
+    - heater/h1.jpg
+    - heater/h2.jpg
+    - heater/h3.jpg
+    - heater/h4.jpg
+    - heater/h5.jpg
+    - heater/h6.jpg
+    - heater/h7.jpg
+    - heater/h8.jpg
+    - heater/h9.jpg
+    - heater/h10.jpg
+    - laptop/l1.jpg
+    - laptop/l2.jpg
+    - laptop/l3.jpg
+    - laptop/l4.jpg
+    - laptop/l5.jpg
+    - laptop/l6.jpg
+    - laptop/l7.jpg
+    - laptop/l8.jpg
+    - laptop/l9.jpg
+    - laptop/l10.jpg
+    - mobil/m1.jpg
+    - mobil/m2.jpg
+    - mobil/m3.jpg
+    - mobil/m4.jpg
+    - mobil/m5.jpg
+    - mobil/m6.jpg
+    - mobil/m7.jpg
+    - mobil/m8.jpg
+    - mobil/m9.jpg
+    - mobil/m10.jpg
+    - washing/w1.jpg
+    - washing/w2.jpg
+    - washing/w3.jpg
+    - washing/w4.jpg
+    - washing/w5.jpg
+    - washing/w6.jpg
+    - washing/w7.jpg
+    - washing/w8.jpg
+    - washing/w9.jpg
+    - washing/w10.jpg
 
 
 

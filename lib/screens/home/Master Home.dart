@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sign_up/screens/Best%20Daily%20Offers.dart';
-import 'package:sign_up/screens/Best%20Seller.dart';
-import 'package:sign_up/screens/HomeScreen.dart';
-import 'package:sign_up/screens/wrapper.dart';
+import 'package:sign_up/screens/home/Best%20Daily%20Offers.dart';
+import 'package:sign_up/screens/home/Best%20Seller.dart';
+import 'package:sign_up/screens/home/HomeScreen.dart';
+import 'package:sign_up/screens/home/wrapper.dart';
 
 class MrHome extends StatefulWidget {
   @override

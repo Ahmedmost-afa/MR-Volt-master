@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sign_up/screens/Best%20Daily%20Offers.dart';
-import 'package:sign_up/screens/Best%20Seller.dart';
-import 'package:sign_up/screens/devices.dart';
+import 'package:sign_up/screens/home/Best%20Daily%20Offers.dart';
+import 'package:sign_up/screens/home/Best%20Seller.dart';
+import 'package:sign_up/screens/home/devices.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
