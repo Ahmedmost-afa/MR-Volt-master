@@ -1,12 +1,13 @@
+
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
-class MobilesInfo extends StatefulWidget {
+class ConditionersInfo extends StatefulWidget {
   @override
-  _MobilesInfo createState() => _MobilesInfo();
+  _ConditionersInfo createState() => _ConditionersInfo();
 }
 
-class _MobilesInfo extends State<MobilesInfo> {
+class _ConditionersInfo extends State<ConditionersInfo> {
   Widget _colorWidget(Color color, {bool isSelected = false}) {
     return CircleAvatar(
       radius: 12,
@@ -29,9 +30,9 @@ class _MobilesInfo extends State<MobilesInfo> {
       child: Carousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('mobil/m1.jpg'),
-          AssetImage('mobil/m2.jpg'),
-          AssetImage('mobil/m3.jpg'),
+          AssetImage('images/Conditioner.jpg'),
+          AssetImage('images/Conditioner.jpg'),
+          AssetImage('images/Conditioner.jpg'),
         ],
         indicatorBgPadding: 2.5,
         autoplay: true,
@@ -82,7 +83,7 @@ class _MobilesInfo extends State<MobilesInfo> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            'LG Fridge',
+                            'LG ',
                             textAlign: TextAlign.left,
                             style: TextStyle(fontSize: 18, color: Colors.black),
                           ),
@@ -178,8 +179,7 @@ class _MobilesInfo extends State<MobilesInfo> {
                   height: 10,
                 ),
                 Text(
-           'In the digital jungle, navigate your way effortlessly, with the Realme 5 Pro dual-SIM smartphone. Its crystal green color on a sleek body makes heads turn wherever you go. For the smooth functioning of heavy-duty apps and games, the Realme smartphone features Qualcomm Snapdragon 712 AIE processor. Similarly, the seamless transition between apps and games while multi-tasking'
-                ,
+                  'In the digital jungle, navigate your way effortlessly, with the Realme 5 Pro dual-SIM smartphone. Its crystal green color on a sleek body makes heads turn wherever you go. For the smooth functioning of heavy-duty apps and games, the Realme smartphone features Qualcomm Snapdragon 712 AIE processor. Similarly, the seamless transition between apps and games while multi-tasking',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontWeight: FontWeight.w300,

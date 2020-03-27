@@ -242,7 +242,7 @@ class _MyAppState extends State<HomeScreen> {
                                       builder: (context) => BDailyOff(),
                                     )),
                                 child: Image(
-                                  image: AssetImage('images/ca.jpg'),
+                                  image: AssetImage('images/heater.jpg'),
                                 ),
                               ),
                             )),
@@ -379,7 +379,7 @@ class _MyAppState extends State<HomeScreen> {
                                       builder: (context) => BestSeller(),
                                     )),
                                 child: Image(
-                                  image: AssetImage('images/ca.jpg'),
+                                  image: AssetImage('images/heater.jpg'),
                                 ),
                               ),
                             )),

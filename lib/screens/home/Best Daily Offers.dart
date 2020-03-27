@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sign_up/screens/home/ProuductInfo.dart';
+import 'package:sign_up/screens/DevicesDetails/HeaterDetails.dart';
+import 'package:sign_up/screens/DevicesDetails/WashingDetails.dart';
 import 'package:sign_up/screens/home/devices.dart';
+import 'package:sign_up/screens/DevicesDetails//CoockerDetails.dart';
+import 'package:sign_up/screens/DevicesDetails//FridgeDetails.dart';
+import 'package:sign_up/screens/DevicesDetails//LaptopDetails.dart';
+
 
 class BDailyOff extends StatefulWidget {
   @override
@@ -36,7 +41,7 @@ class _BDailyOffState extends State<BDailyOff> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => productsInfo(),
+                            builder: (context) => CoocersInfo(),
                           )),
                       child: Image(
                         image: AssetImage('images/bo.png'),
@@ -50,10 +55,10 @@ class _BDailyOffState extends State<BDailyOff> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => device(),
+                            builder: (context) => HeatersInfo(),
                           )),
                       child: Image(
-                        image: AssetImage('images/ca.jpg'),
+                        image: AssetImage('images/heater.jpg'),
                       ),
                     ),
                   )),
@@ -64,7 +69,7 @@ class _BDailyOffState extends State<BDailyOff> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => device(),
+                            builder: (context) => WashingsInfo(),
                           )),
                       child: Image(
                         image: AssetImage('images/gha.jpg'),
@@ -78,7 +83,7 @@ class _BDailyOffState extends State<BDailyOff> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => device(),
+                            builder: (context) => LaptopsInfo(),
                           )),
                       child: Image(
                         image: AssetImage('images/la.jpg'),
@@ -92,7 +97,7 @@ class _BDailyOffState extends State<BDailyOff> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => device(),
+                            builder: (context) => FridgesInfo(),
                           )),
                       child: Image(
                         image: AssetImage('images/ta.jpg'),

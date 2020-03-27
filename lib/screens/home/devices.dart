@@ -1,5 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sign_up/screens/DevicesList/Ventilatorlst.dart';
+import 'package:sign_up/screens/DevicesList/listConditioner.dart';
+import 'package:sign_up/screens/DevicesList/listCoocker.dart';
+import 'package:sign_up/screens/DevicesList/listFridges.dart';
+import 'package:sign_up/screens/DevicesList/listHeater.dart';
+import 'package:sign_up/screens/DevicesList/listLaptop.dart';
+import 'package:sign_up/screens/DevicesList/listMobil.dart';
+import 'package:sign_up/screens/DevicesList/listWashing.dart';
+import 'package:sign_up/screens/home/HomeScreen.dart';
 
 import 'Best Daily Offers.dart';
 
@@ -15,8 +24,18 @@ class _deviceState extends State<device> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         backgroundColor: Colors.teal,
+//        leading: IconButton(
+//          icon: Icon(Icons.arrow_back),
+//          alignment: Alignment.topLeft,
+//          padding: EdgeInsets.all(15),
+//          onPressed: () =>Navigator.push(
+//              context,
+//              MaterialPageRoute(
+//                builder: (context) => (),
+//              )),
+//        ),
         title: Text(
-          'Devices',
+          'Devices ',
           style: TextStyle(
             fontFamily: 'Oswald',
             letterSpacing: 3,
@@ -24,6 +43,7 @@ class _deviceState extends State<device> {
           ),
         ),
       ),
+
       body: ListView(
         children: <Widget>[
           Padding(
@@ -60,7 +80,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => fridges(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/fridge.jpg'),
@@ -96,7 +116,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => coocker(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/coockers.jpg'),
@@ -137,7 +157,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => Conditioner(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/Conditioner.jpg'),
@@ -173,7 +193,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => washer(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/washMachine.jpg'),
@@ -214,7 +234,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => heater(),
                                     )),
                                 child: Image(
                                     image: AssetImage('images/heater.jpg')),
@@ -249,7 +269,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => Vintilator(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/ventilator.jpg'),
@@ -290,7 +310,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => laptop(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/laptob.jpg'),
@@ -326,7 +346,7 @@ class _deviceState extends State<device> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BDailyOff(),
+                                      builder: (context) => mobil(),
                                     )),
                                 child: Image(
                                   image: AssetImage('images/mobile.jpg'),

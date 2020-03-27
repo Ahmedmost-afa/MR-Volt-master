@@ -1,12 +1,13 @@
+//LaptopDetails
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
-class CoocersInfo extends StatefulWidget {
+class HeatersInfo extends StatefulWidget {
   @override
-  _CoocersInfo createState() => _CoocersInfo();
+  _HeatersInfo createState() => _HeatersInfo();
 }
 
-class _CoocersInfo extends State<CoocersInfo> {
+class _HeatersInfo extends State<HeatersInfo> {
   Widget _colorWidget(Color color, {bool isSelected = false}) {
     return CircleAvatar(
       radius: 12,
@@ -29,9 +30,9 @@ class _CoocersInfo extends State<CoocersInfo> {
       child: Carousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('images/a.jpg'),
-          AssetImage('images/b.jpg'),
-          AssetImage('images/c.jpg'),
+          AssetImage('heater/h1.jpg'),
+          AssetImage('heater/h1.jpg'),
+          AssetImage('heater/h1.jpg'),
         ],
         indicatorBgPadding: 2.5,
         autoplay: true,
@@ -82,7 +83,7 @@ class _CoocersInfo extends State<CoocersInfo> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            'LG Fridge',
+                            'Heater',
                             textAlign: TextAlign.left,
                             style: TextStyle(fontSize: 18, color: Colors.black),
                           ),
@@ -178,18 +179,7 @@ class _CoocersInfo extends State<CoocersInfo> {
                   height: 10,
                 ),
                 Text(
-                  'Required Space dimensions (HxWxD) in mm : 600 x 560 x 550'
-                  'Unit Dimensions (HxWxD) in mm : 595 x 594 x 569'
-                  'Cord Length : 1.6 meters'
-                  'Maximum Power : 1760'
-                  'Voltage : 220-240 Volts'
-                  'Required Fuse : 16'
-                  'Gas Digital Control'
-                  'High gloss enamel oven lining'
-                  'Electric oven ignition'
-                  'Thermocouple safety for the oven'
-                  'Cooling fan'
-                  'Anti-Fingerprint and easy to clean',
+                  'In the digital jungle, navigate your way effortlessly, with the Realme 5 Pro dual-SIM smartphone. Its crystal green color on a sleek body makes heads turn wherever you go. For the smooth functioning of heavy-duty apps and games, the Realme smartphone features Qualcomm Snapdragon 712 AIE processor. Similarly, the seamless transition between apps and games while multi-tasking',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontWeight: FontWeight.w300,
